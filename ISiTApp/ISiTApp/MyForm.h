@@ -10,7 +10,7 @@ namespace ISiTApp {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Сводка для MyForm
+	/// Г‘ГўГ®Г¤ГЄГ  Г¤Г«Гї MyForm
 	/// </summary>
 	public ref class MyForm : public System::Windows::Forms::Form
 	{
@@ -19,19 +19,19 @@ namespace ISiTApp {
 		{
 			InitializeComponent();
 			//
-			//TODO: добавьте код конструктора
+			//TODO: Г¤Г®ГЎГ ГўГјГІГҐ ГЄГ®Г¤ ГЄГ®Г­Г±ГІГ°ГіГЄГІГ®Г°Г 
 			//
 		}
 
 	protected:
 		/// <summary>
-		/// Освободить все используемые ресурсы.
+		/// ГЋГ±ГўГ®ГЎГ®Г¤ГЁГІГј ГўГ±ГҐ ГЁГ±ГЇГ®Г«ГјГ§ГіГҐГ¬Г»ГҐ Г°ГҐГ±ГіГ°Г±Г».
 		/// </summary>
 		~MyForm()
 		{
 			if (components)
 			{
-				delete components;//деструктор для освобождения памяти
+				delete components;//Г¤ГҐГ±ГІГ°ГіГЄГІГ®Г° Г¤Г«Гї Г®Г±ГўГ®ГЎГ®Г¦Г¤ГҐГ­ГЁГї ГЇГ Г¬ГїГІГЁ
 			}
 		}
 
@@ -89,14 +89,14 @@ namespace ISiTApp {
 
 	private:
 		/// <summary>
-		/// Обязательная переменная конструктора.
+		/// ГЋГЎГїГ§Г ГІГҐГ«ГјГ­Г Гї ГЇГҐГ°ГҐГ¬ГҐГ­Г­Г Гї ГЄГ®Г­Г±ГІГ°ГіГЄГІГ®Г°Г .
 		/// </summary>
 		System::ComponentModel::Container ^components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
-		/// Требуемый метод для поддержки конструктора — не изменяйте 
-		/// содержимое этого метода с помощью редактора кода.
+		/// Г’Г°ГҐГЎГіГҐГ¬Г»Г© Г¬ГҐГІГ®Г¤ Г¤Г«Гї ГЇГ®Г¤Г¤ГҐГ°Г¦ГЄГЁ ГЄГ®Г­Г±ГІГ°ГіГЄГІГ®Г°Г  вЂ” Г­ГҐ ГЁГ§Г¬ГҐГ­ГїГ©ГІГҐ 
+		/// Г±Г®Г¤ГҐГ°Г¦ГЁГ¬Г®ГҐ ГЅГІГ®ГЈГ® Г¬ГҐГІГ®Г¤Г  Г± ГЇГ®Г¬Г®Г№ГјГѕ Г°ГҐГ¤Г ГЄГІГ®Г°Г  ГЄГ®Г¤Г .
 		/// </summary>
 		void InitializeComponent(void)
 		{
@@ -388,5 +388,83 @@ namespace ISiTApp {
 
 		}
 #pragma endregion
+	private: System::Void closer_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->Close();
+	}
+		   private: System::Void btnNumber_Click(System::Object^ sender, System::EventArgs^ e) {
+			   this->mainlabel->ForeColor = Color::Black;
+			   Button^ button = safe_cast<Button^>(sender);
+			  
+
+			   if (this->mainlabel->Text == "0" || is_ravno) {
+				   is_ravno = false;
+				   this->mainlabel->Text = button->Text;
+			   }
+			   else
+				   this->mainlabel->Text = this->mainlabel->Text + button->Text;
+		   }
+	
+private: System::Void butn_devide_Click(System::Object^ sender, System::EventArgs^ e) {
+	math_action('/');
+}
+private: System::Void butn_prouz_Click(System::Object^ sender, System::EventArgs^ e) {
+	math_action('*');
+}
+private: System::Void butn_minus_Click(System::Object^ sender, System::EventArgs^ e) {
+	math_action('-');
+}
+private: System::Void butn_plus_Click(System::Object^ sender, System::EventArgs^ e) {
+	math_action('+');
+}
+	private: System::Void math_action(char action) {
+		this->first_num = System::Convert::ToDouble(this->mainlabel->Text);
+		this->user_action = action;
+		this->mainlabel->Text = "0";
+	}
+
+private: System::Void butn_ravno_Click(System::Object^ sender, System::EventArgs^ e) {
+	if (user_action == ' ')
+		return;
+
+	float second = System::Convert::ToDouble(this->mainlabel->Text);
+	float res;
+	switch (this->user_action) {
+	case '+':res = this->first_num + second; break;
+	case '-':res = this->first_num - second; break;
+	case '*':res = this->first_num * second; break;
+	case '%':res = this->first_num * second/100; break;
+	case '/':
+		if (second == 0){
+			res = 0;
+			this->mainlabel->ForeColor = Color::Red;
+			MessageBox::Show(this, "Р”РµР»РёС‚СЊ РЅР° РЅРѕР»СЊ РЅРµР»СЊР·СЏ!", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+	}
+		else
+		res = this->first_num / second; break;
+	}
+	is_ravno = true;
+	this->mainlabel->Text = System::Convert::ToString(res);
+}
+private: System::Void butn_ac_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->mainlabel->Text = "0";
+	this->mainlabel->ForeColor = Color::White;
+	this->first_num = 0;
+	this->user_action = ' ';
+	is_ravno = false;
+}
+
+private: System::Void butn_znak_Click_1(System::Object^ sender, System::EventArgs^ e) {
+	float num = System::Convert::ToDouble(this->mainlabel->Text);
+	num *= -1;
+	this->mainlabel->Text = System::Convert::ToString(num);
+}
+private: System::Void butn_percent_Click(System::Object^ sender, System::EventArgs^ e) {
+	math_action('%');
+}
+private: System::Void butn_tochka_Click(System::Object^ sender, System::EventArgs^ e) {
+	String^ text = this->mainlabel->Text;
+	if(!text->Contains(","))
+	this->mainlabel->Text = text + ",";
+}
 };
 }
