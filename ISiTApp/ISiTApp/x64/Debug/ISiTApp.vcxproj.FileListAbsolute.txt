@@ -1,0 +1,4 @@
+D:\unikprojects\проект трпо\ISiTApp\ISiTApp\x64\Debug\ISiTApp.vcxproj.AssemblyReference.cache
+D:\unikprojects\проект трпо\ISiTApp\ISiTApp\x64\Debug\ISiTApp.vcxproj.SuggestedBindingRedirects.cache
+D:\unikprojects\проект трпо\ISiTApp\ISiTApp\x64\Debug\ISiTApp.MyForm.resources
+D:\unikprojects\проект трпо\ISiTApp\ISiTApp\x64\Debug\ISiTApp.vcxproj.GenerateResource.cache

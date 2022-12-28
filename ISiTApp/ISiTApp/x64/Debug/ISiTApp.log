@@ -1,0 +1,40 @@
+﻿Сборка начата 28.12.2022 11:28:30.
+Уровень детализации журнала: Normal.     1>Проект "D:\unikprojects\проект трпо\ISiTApp\ISiTApp\ISiTApp.vcxproj" в узле 2 (целевые объекты Build).
+     1>GenerateBindingRedirects:
+         Нет предлагаемых перенаправлений привязки от ResolveAssemblyReferences.
+       InitializeBuildStatus:
+         Обращение к "x64\Debug\ISiTApp.tlog\unsuccessfulbuild".
+       GenerateTargetFrameworkMonikerAttribute:
+       Целевой объект "GenerateTargetFrameworkMonikerAttribute" пропускается, так как все выходные файлы актуальны по отношению к входным.
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.33.31629\bin\HostX64\x64\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\\" /AI"C:\Program Files (x86)\Windows Kits\10\References" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Facades\\" /Zi /clr /nologo /W3 /WX- /diagnostics:column /Od /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc143.pdb" /external:W3 /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.dll" /FC /errorReport:prompt /clr:nostdlib MyForm.cpp
+         MyForm.cpp
+     1>D:\unikprojects\проект трпо\ISiTApp\ISiTApp\MyForm.h(421,46): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+     1>D:\unikprojects\проект трпо\ISiTApp\ISiTApp\MyForm.h(430,15): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+     1>D:\unikprojects\проект трпо\ISiTApp\ISiTApp\MyForm.h(458,12): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+       CreateManifestResourceNames:
+         Для всех выходных данных обновления не требуется.
+       CoreResGen:
+         Отсутствуют ресурсы, устаревшие по отношению к своим исходным файлам. Пропуск формирования ресурсов.
+       Link:
+         C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.33.31629\bin\HostX64\x64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\unikprojects\проект трпо\ISiTApp\x64\Debug\ISiTApp.exe" /INCREMENTAL /ILK:"x64\Debug\ISiTApp.ilk" /NOLOGO /ASSEMBLYRESOURCE:x64\Debug\ISiTApp.MyForm.resources /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FULL /PDB:"D:\unikprojects\проект трпо\ISiTApp\x64\Debug\ISiTApp.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X64 x64\Debug\MyForm.obj
+         "x64\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.obj"
+         MyForm.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+         ISiTApp.vcxproj -> D:\unikprojects\проект трпо\ISiTApp\x64\Debug\ISiTApp.exe
+       FinalizeBuildStatus:
+         Файл "x64\Debug\ISiTApp.tlog\unsuccessfulbuild" удаляется.
+         Обращение к "x64\Debug\ISiTApp.tlog\ISiTApp.lastbuildstate".
+     1>Сборка проекта "D:\unikprojects\проект трпо\ISiTApp\ISiTApp\ISiTApp.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+
+       "D:\unikprojects\проект трпо\ISiTApp\ISiTApp\ISiTApp.vcxproj" (целевой объект Build ) (1) ->
+       (Целевой объект ClCompile) -> 
+         D:\unikprojects\проект трпо\ISiTApp\ISiTApp\MyForm.h(421,46): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+         D:\unikprojects\проект трпо\ISiTApp\ISiTApp\MyForm.h(430,15): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+         D:\unikprojects\проект трпо\ISiTApp\ISiTApp\MyForm.h(458,12): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+
+    Предупреждений: 3
+    Ошибок: 0
+
+Прошло времени 00:00:02.48
