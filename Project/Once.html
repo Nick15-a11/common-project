@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<head>
+    <link rel="stylesheet" type="text/css" href="once.css">
+    
+    
+    <title>Калькулятор</title>
+    
+   
+</head>
+<body>
+    <div class="typewriter">
+        <h1>Проект "Калькулятор"</h1>
+ </div>
+ 
+ <div class="typewriter"><p>Добро пожаловать на сайт нашего проекта под названием "Калькулятор"</p>
+ </div>
+ 
+ <p class="Player"><span>Калькулятор: история создания</span></p>
+ <div class="element-big"></div>
+ <div><p class="game element-animation">История создания нашего проекта началась с того, что мы сидели в общем чате и думали, какой же проект нам создать.
+  У нас было много идей, но 2 идеи показались нам интересными, это шахматы и калькулятор. Но мы видели, что коллеги с нашей группы также делали шахматы, вот мы и решились делать калькулятор.
+ </p></div>
+     <div><p class="game element-animation">Наш проект начал делать Николай. Он первый начал разрабатывать код, и в скором времени к нему присоединился к работе Кирилл. 
+        <br>Также в это же время документацию начал писать Артём, который переговаривался со своими коллегами по проекту.
+        <br>Я, Александр, работал над созданием сайта нашего проекта, но также переговаривался со своими коллегами по проекту через Discord, там мы созванивались на протяжении всего времени как делали проект.</p></div>
+        
+        <p class="game element-animation">Скриншоты нашего проекта "Калькулятор"</p>
+         
+           
+
+<!-- Images used to open the lightbox -->
+<div class="row">
+    <div class="column">
+      <img src="source/Calculator.png" onclick="openModal();currentSlide(1)" class="hover-shadow element-animation" style="width:100%;max-width:300px; max-height: 400px;">
+    </div>
+    <div class="column">
+      <img src="source/Калькулятор.png" onclick="openModal();currentSlide(2)" class="hover-shadow element-animation" style="width:100%;max-width:300px; max-height: 150px;">
+    </div>
+    <div class="column">
+      <img src="source/Code.png" onclick="openModal();currentSlide(3)" class="hover-shadow element-animation" style="width:100%;max-width:300px; max-height: 150px;">
+    </div>
+    <div class="column">
+      <img src="source/Код.png" onclick="openModal();currentSlide(4)" class="hover-shadow element-animation" style="width:100%;max-width:300px; max-height: 150px;">
+    </div>
+  </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="source/Calculator.png" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="source/Калькулятор.png" style="width:100%; height: 50%;">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="source/Code.png" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="source/Код.png" style="width:100%">
+      </div>
+  
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+      <!-- Thumbnail image controls -->
+      
+    </div>
+  </div>
+  <div style="text-align: left;">
+  <div> <p class="game element-animation">Наш проект на GitHub</p><a href="https://github.com/Nick15-a11/common-project"><img class="game element-animation" src="source/git.png" width="300" height="300" border="0" alt="Пример" style="display: flex;"></a></div>
+  <div class="game element-animation"><p>Над проектом работали мы: <a href="https://github.com/AlexShutro">Александр Шутро</a>, <a href="https://github.com/Nick15-a11">Николай Ксюф</a>, <a href="https://github.com/SUBURASHI">Артём Володько</a>,<a href="https://github.com/tyf9k">Кирилл Кириев</a>.</p></div>
+  </div>
+  <div class="game element-animation" style="color:white">
+    <p><a href="Проект.docx" download="">Скачать документацию</a></p>
+  </div>
+<script src="once.js"> </script> 
+
+
+</body>
+</html>
+
